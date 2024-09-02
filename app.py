@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ## load the GROQ
-os.environ['GROQ_API_KEY']=os.getenv("GROQ_API_KEY")
+os.environ['GROQ_API_KEY']=st.secrets["GROQ_API_KEY"]
 
 st.set_page_config(page_title="Chat with SQL DB", page_icon="🦜")
 st.title("Chat with SQL DB")
